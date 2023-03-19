@@ -1,0 +1,10 @@
+{
+  "dev": {},
+  "bsctest": {
+    "Duy": "0x6153a25C9C653106A0ADfb03Ca2490BBDD86269E",
+    "Vault": "0x777aADD84ce147Ea33A85B99dA7f185948FA6f39",
+    "USDT": "0xCddde9860610035871b01Af6F5dd0D27DEa5390d",
+    "ico": "0xEEeEdD092FEFE214536b7969a5b9aBD66e783db1"
+  },
+  "main": {}
+}
