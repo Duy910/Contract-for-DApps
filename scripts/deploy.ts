@@ -16,10 +16,10 @@ async function main() {
   // console.log("Vault address: ", vault.address);
   // Config.setConfig(network + ".Vault", vault.address);
 
-  const Duy = await ethers.getContractFactory("USDT");
-  const duy = await Duy.deploy();
-  console.log("USDT address: ", duy.address);
-  Config.setConfig(network + ".USDT", duy.address);
+  // const Duy = await ethers.getContractFactory("USDT");
+  // const duy = await Duy.deploy();
+  // console.log("USDT address: ", duy.address);
+  // Config.setConfig(network + ".USDT", duy.address);
 
   // const Ico = await ethers.getContractFactory("DUYCrowdSale");
   // const ico = await Ico.deploy(
@@ -30,6 +30,19 @@ async function main() {
   // );
   // console.log("ICO address: ", ico.address);
   // Config.setConfig(network + ".ico", ico.address);
+
+  // const NFT = await ethers.getContractFactory("NFT");
+  // const nft = await NFT.deploy();
+  // console.log("NFT address: ", nft.address);
+  // Config.setConfig(network + ".NFT", nft.address);
+
+  const NFTFeature = await ethers.getContractFactory("NFTFeature");
+  const nftfeature = await NFTFeature.deploy(
+    "0x6153a25C9C653106A0ADfb03Ca2490BBDD86269E",
+    "0x5f67455e1F4dFC04066E95f63a9911040A073050"
+  );
+  console.log("NFT address: ", nftfeature.address);
+  Config.setConfig(network + ".NFTFeature", nftfeature.address);
 
   await Config.updateConfig();
 }
